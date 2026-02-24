@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TMS | خدمات تنظيف وصيانة الأجهزة</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:#0f172a;color:white;line-height:1.7;}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;background:#111827;position:fixed;width:100%;z-index:1000;}
+.logo{font-size:26px;font-weight:bold;color:#38bdf8;}
+nav a{color:white;text-decoration:none;margin-right:20px;transition:.3s;}
+nav a:hover{color:#38bdf8;}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(to right,#0f172a,#1e293b);padding-top:80px;}
+.hero h1{font-size:38px;margin-bottom:15px;}
+.hero p{opacity:.8;margin-bottom:25px;}
+.btn{background:#38bdf8;color:#0f172a;padding:12px 30px;border-radius:30px;text-decoration:none;font-weight:bold;transition:.3s;}
+.btn:hover{transform:scale(1.1);background:white;}
+section{padding:80px 8%;text-align:center;}
+h2{margin-bottom:40px;font-size:30px;}
+.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;}
+.card{background:#1e293b;width:260px;padding:25px;border-radius:15px;text-decoration:none;color:white;transition:.4s;box-shadow:0 0 20px rgba(0,0,0,.4);}
+.card:hover{transform:translateY(-10px);box-shadow:0 0 35px rgba(56,189,248,.6);}
+.details{background:#1e293b;margin:40px auto;max-width:800px;padding:40px;border-radius:15px;}
+.price{font-size:22px;margin-top:15px;color:#38bdf8;}
+.free{color:#22c55e;font-weight:bold;}
+#payment .cards{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;margin-top:20px;}
+#payment .card{background:#1e293b;width:260px;padding:25px;border-radius:15px;text-align:center;transition:.4s;box-shadow:0 0 20px rgba(0,0,0,.4);}
+#payment .card:hover{transform:translateY(-10px);box-shadow:0 0 35px rgba(56,189,248,.6);}
+form{max-width:500px;margin:auto;display:flex;flex-direction:column;gap:15px;}
+input,textarea{padding:12px;border-radius:8px;border:none;}
+button{padding:12px;border:none;background:#38bdf8;font-weight:bold;border-radius:8px;cursor:pointer;}
+footer{background:#111827;padding:20px;text-align:center;margin-top:40px;}
+.whatsapp{position:fixed;bottom:20px;left:20px;background:#25D366;color:white;padding:15px;border-radius:50%;font-size:22px;text-decoration:none;box-shadow:0 0 15px rgba(0,0,0,.5);}
+@media(max-width:768px){.cards{flex-direction:column;align-items:center;}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">TMS</div>
+<nav>
+<a href="#">الرئيسية</a>
+<a href="#services">الخدمات</a>
+<a href="#payment">طرق الدفع</a>
+<a href="#contact">تواصل</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>تنظيف وصيانة الأجهزة باحترافية</h1>
+<p>PC | لابتوب | سوني | تركيب قطع | إصلاح</p>
+<a href="#services" class="btn">استعرض الخدمات</a>
+</section>
+
+<section id="services">
+<h2>خدماتنا</h2>
+<div class="cards">
+<a href="#pc" class="card"><h3>🖥 تنظيف PC</h3><p>السعر 60 ريال</p></a>
+<a href="#laptop" class="card"><h3>💻 تنظيف لابتوب</h3><p>السعر 60 ريال</p></a>
+<a href="#sony" class="card"><h3>🎮 تنظيف سوني</h3><p>السعر 50 ريال</p></a>
+<a href="#install" class="card"><h3>🔧 تركيب قطع</h3><p>35 ريال بدون شحن (+25 ريال شحن)</p></a>
+<a href="#repair" class="card"><h3>🛠 إصلاح الأجهزة</h3><p>كشف مجاني</p></a>
+</div>
+</section>
+
+<section id="pc" class="details"><h2>🖥 تنظيف PC</h2><p>تنظيف داخلي شامل وإزالة الغبار وتحسين التبريد</p><div class="price">60 ريال</div></section>
+<section id="laptop" class="details"><h2>💻 تنظيف لابتوب</h2><p>تنظيف مراوح + تغيير معجون حراري</p><div class="price">60 ريال</div></section>
+<section id="sony" class="details"><h2>🎮 تنظيف سوني</h2><p>تقليل حرارة وصوت المروحة وتنظيف داخلي</p><div class="price">50 ريال</div></section>
+<section id="install" class="details"><h2>🔧 تركيب قطع البي سي</h2><p>تركيب RAM - SSD - كرت شاشة - تجميع كامل</p><div class="price">35 ريال بدون شحن</div><div class="price">+25 ريال عند طلب الشحن</div></section>
+<section id="repair" class="details"><h2>🛠 إصلاح الأجهزة</h2><p>تشخيص كامل للأعطال</p><div class="price free">كشف مجاني</div><p>الدفع بعد الموافقة على الإصلاح</p></section>
+
+<section id="payment" class="details">
+<h2>طرق الدفع</h2>
+<div class="cards">
+<div class="card"><h3>💳 تحويل راجحي</h3><p>يمكنك الدفع مباشرة عن طريق تطبيق راجحي</p></div>
+<div class="card"><h3>💡 تحويل سداد / برق</h3><p>الدفع عبر نظام سداد أو تطبيق برق بسهولة</p></div>
+<div class="card"><h3>📱 قريباً: STC Pay</h3><p>الدفع الإلكتروني عبر STC Pay قريباً</p></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>تواصل معنا</h2>
+<form action="send.php" method="POST">
+<input type="text" name="name" placeholder="الاسم" required>
+<input type="email" name="email" placeholder="البريد الإلكتروني" required>
+<textarea name="message" rows="5" placeholder="طلبك" required></textarea>
+<button type="submit">إرسال</button>
+</form>
+</section>
+
+<footer>© 2026 TMS | جميع الحقوق محفوظة</footer>
+<a href="https://wa.me/966596261551" class="whatsapp" target="_blank">💬</a>
+
+</body>
+</html>
