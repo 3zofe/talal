@@ -84,9 +84,17 @@ footer{background:#111827;padding:20px;text-align:center;margin-top:40px;}
 <section id="contact">
 <h2>تواصل معنا</h2>
 
-<form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+<form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
   
+  <!-- مهم جداً -->
   <input type="hidden" name="form-name" value="contact">
+
+  <!-- حماية من السبام -->
+  <p hidden>
+    <label>لا تملأ هذا الحقل:
+      <input name="bot-field">
+    </label>
+  </p>
 
   <p>
     <label>الاسم:<br>
@@ -118,4 +126,3 @@ footer{background:#111827;padding:20px;text-align:center;margin-top:40px;}
 
 </body>
 </html>
-
