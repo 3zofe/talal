@@ -30,19 +30,19 @@
 <section id="services">
 <h2>خدماتنا</h2>
 <div class="cards">
-<a href="#pc" class="card"><h3>🖥 تنظيف PC</h3><p>السعر 60 ريال</p></a>
-<a href="#laptop" class="card"><h3>💻 تنظيف لابتوب</h3><p>السعر 60 ريال</p></a>
-<a href="#sony" class="card"><h3>🎮 تنظيف سوني</h3><p>السعر 50 ريال</p></a>
-<a href="#install" class="card"><h3>🔧 تركيب قطع</h3><p>35 ريال بدون شحن (+25 ريال شحن)</p></a>
-<a href="#repair" class="card"><h3>🛠 إصلاح الأجهزة</h3><p>كشف مجاني</p></a>
+<a href="#pc" class="card"><h3>🖥 تنظيف PC</h3><p>السعر 45 ريال</p></a>
+<a href="#laptop" class="card"><h3>💻 تنظيف لابتوب</h3><p>السعر 40 ريال</p></a>
+<a href="#sony" class="card"><h3>🎮 تنظيف سوني</h3><p>السعر 35 ريال</p></a>
+<a href="#install" class="card"><h3>🔧 تركيب قطع</h3><p>50 ريال مع الشحن (+25 ريال شحن الكراتين)</p></a>
+<a href="#repair" class="card"><h3>🛠 كشف الأجهزة</h3><p>5 ريال</p></a>
 </div>
 </section>
 
 <section id="pc" class="details"><h2>🖥 تنظيف PC</h2><p>تنظيف داخلي شامل وإزالة الغبار وتحسين التبريد</p><div class="price">45 ريال</div></section>
 <section id="laptop" class="details"><h2>💻 تنظيف لابتوب</h2><p>تنظيف مراوح + تغيير معجون حراري</p><div class="price">40 ريال</div></section>
 <section id="sony" class="details"><h2>🎮 تنظيف سوني</h2><p>تقليل حرارة وصوت المروحة وتنظيف داخلي</p><div class="price">35 ريال</div></section>
-<section id="install" class="details"><h2>🔧 تركيب قطع البي سي</h2><p>تركيب RAM - SSD - كرت شاشة - تجميع كامل</p><div class="price">50 ريال مع الشحن </div><div class="price">+25 ريال عند طلب الشحن مع كراتين القطع</div></section>
-<section id="repair" class="details"><h2>🛠 إصلاح الأجهزة</h2><p>تشخيص كامل للأعطال</p><div class="price free">كشف مجاني</div><p>الدفع بعد الموافقة على الإصلاح</p></section>
+<section id="install" class="details"><h2>🔧 تركيب قطع البي سي</h2><p>تركيب RAM - SSD - كرت شاشة - تجميع كامل</p><div class="price">50 ريال مع الشحن </div><div class="price">+25 ريال عند طلب شحن كراتين القطع</div></section>
+<section id="repair" class="details"><h2>🛠 كشف الأجهزة</h2><p>تشخيص كامل للأعطال</p><div class="price free">5 ريال</div><p>الدفع بعد الموافقة على الإصلاح</p></section>
 
 <section id="payment" class="details">
 <h2>طرق الدفع</h2>
@@ -54,19 +54,11 @@
 </section>
 
 <section id="contact">
-<h2>تواصل معنا</h2>
+<h2>قدم طلبك </h2>
 
-<form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
-  
-  <!-- مهم جداً -->
-  <input type="hidden" name="form-name" value="contact">
+<form action="https://formspree.io/f/xxxxxxxx" method="POST">
+<input type="hidden" name="_redirect" value="https://username.github.io/projectname/thank-you.html">
 
-  <!-- حماية من السبام -->
-  <p hidden>
-    <label>لا تملأ هذا الحقل:
-      <input name="bot-field">
-    </label>
-  </p>
 
   <p>
     <label>الاسم:<br>
@@ -81,9 +73,15 @@
   </p>
 
   <p>
-    <label>رسالتك:<br>
-      <textarea name="message" required></textarea>
-    </label>
+    <label for="service">الخدمات:</label><br>
+    <select name="service" id="service" required>
+      <option value="" disabled selected>اختر الخدمة</option>
+      <option value="تنظيف PC">🖥 تنظيف PC</option>
+      <option value="تنظيف لابتوب">💻 تنظيف لابتوب</option>
+      <option value="تنظيف سوني">🎮 تنظيف سوني</option>
+      <option value="تركيب قطع">🔧 تركيب قطع البي سي</option>
+      <option value="كشف أجهزة">🛠 كشف الأجهزة</option>
+    </select>
   </p>
 
   <p>
@@ -97,7 +95,8 @@
   <i class="fa-brands fa-whatsapp"></i>
 </a>
 
-<footer>© 2026 TMS | جميع الحقوق محفوظة</footer>
+<footer>© 2025 TMS | جميع الحقوق محفوظة</footer>
 
 </body>
 </html>
+
